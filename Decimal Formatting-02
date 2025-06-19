@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    float s;
+    scanf("%f\n",&s);
+    float j=floor(s*100)/100;
+    printf("%.2f\n",j);
+    printf("%.2f",s);
+    return 0;
+}
