@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    char b;
+    float c;
+    char d[25],e[25];
+    scanf("%d\n%f\n%c\n%s\n",&a,&c,&b,d);
+    fgets(e,25,stdin);
+    printf("Integer is %d\nFloat is %.2f\nCharacter is %c\nStrings are %s and %s",a,c,b,d,e);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
