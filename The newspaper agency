@@ -1,0 +1,17 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int w,x,y;
+    scanf("%d\n%d\n%d\n",&w,&x,&y);
+    int ft=100;
+    int profit=(x-y)*w-ft;
+    printf("%d\n",profit);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
