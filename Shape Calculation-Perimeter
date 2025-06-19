@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,l,b,r,b1,s1,b2;
+    scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n",&a,&l,&b,&r,&b1,&s1,&b2);
+    printf("Perimeter of Square:%d\n",4*a);
+    printf("Perimeter of Rectangle:%d\n",2*(l+b));
+    printf("Perimeter of Circle:%.2f\n",(float)2*3.141*r);
+    printf("Perimeter of Triangle:%d\n",b1+s1+b2);
+        
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
