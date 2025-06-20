@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+    #include <stdio.h>
+
+int main() {
+    int num, correct = 0;
+    float score = 0.0;
+
+    printf("Enter the numbers\n");
+
+    while (correct < 3) {
+        scanf("%d", &num);
+        printf("%d\n", num);  // Echo the input as shown in sample output
+
+        if (num < 0) {
+            score -= 1.0;
+            break;
+        } else if (num % 2 == 1) {  // Odd number
+            score += 1.0;
+            correct++;
+        } else if (num % 2 == 0) {  // Even number
+            score -= 0.5;
+        }
+    }
+
+    printf("%.1f\n", score);
+    return 0;
+}
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    
