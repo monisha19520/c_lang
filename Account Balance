@@ -1,0 +1,45 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+   #include <stdio.h>
+
+int main() {
+    int balance, choice, amount;
+
+    // Read initial balance and operation choice
+    scanf("%d", &balance);
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:  // Deposit
+            scanf("%d", &amount);
+            balance += amount;
+            printf("%d\n", balance);
+            break;
+
+        case 2:  // Withdraw
+            scanf("%d", &amount);
+            if (amount > balance)
+                printf("Insufficient Balance\n");
+            else {
+                balance -= amount;
+                printf("%d\n", balance);
+            }
+            break;
+
+        default:
+            printf("Invalid Input\n");
+            break;
+    }
+
+    return 0;
+}
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    
