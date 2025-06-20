@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    // Handle non-positive input
+    if (n < 0) {
+        printf("Invalid Input\n");
+        return 0;
+    }
+
+    long long product = 1;
+
+    for (int i = 1; i <= n; i++) {
+        product *= i;
+    }
+
+    printf("Product of value is %lld\n", product);
+
+    return 0;
+}
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
