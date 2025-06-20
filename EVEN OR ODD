@@ -1,0 +1,14 @@
+int main() {
+    int num;
+    scanf("%d\n",&num);
+    if(num%2==0)
+    {
+        printf("The given input %d is Even",num);
+    }
+    else
+    {
+        printf("The given input %d is Odd",num);
+    }
+    return 0;
+} 
+    
