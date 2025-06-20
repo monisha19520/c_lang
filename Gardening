@@ -1,0 +1,35 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <stdio.h>
+
+int main() {
+    int rows, cols, treeNumber;
+    scanf("%d %d %d", &rows, &cols, &treeNumber);
+
+    // Calculate total number of trees
+    int totalTrees = rows * cols;
+
+    // Loop through each row to identify positions of mango trees
+    int isMangoTree = 0;
+    for (int i = 0; i < rows; i++) {
+        int secondCol = i * cols + 2;           // 2nd column
+        int secondLastCol = i * cols + (cols - 1); // (cols-1)th column
+
+        if (treeNumber == secondCol || treeNumber == secondLastCol) {
+            isMangoTree = 1;
+            break;
+        }
+    }
+
+    if (isMangoTree)
+        printf("It is a mango tree\n");
+    else
+        printf("It is not a mango tree\n");
+
+    return 0;
+}
