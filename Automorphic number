@@ -1,0 +1,31 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int num;
+    scanf("%d", &num);
+
+    // Check if input is a valid single-digit number
+    if (num < 0 || num > 9) {
+        printf("Invalid Input\n");
+        return 0;
+    }
+
+    int square = num * num;
+
+    // Check if the last digit(s) of the square match the number
+    if (square % 10 == num)
+        printf("Automorphic Number\n");
+    else
+        printf("Not Automorphic Number\n");
+
+    return 0;
+}
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    
