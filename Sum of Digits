@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    scanf("%d", &num);
+
+    // Check input validity
+    if (num < 10 || num > 99) {
+        printf("Invalid Input\n");
+        return 0;
+    }
+
+    int tens = num / 10;
+    int ones = num % 10;
+    int sum = tens + ones;
+
+    printf("Sum of Digit %d is %03d\n", num, sum);
+
+    return 0;
+}
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    
